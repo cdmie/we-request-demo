@@ -1,0 +1,37 @@
+<view class="page" data-weui-theme="{{theme}}">
+  <view class="index">
+    <view class="index-hd">
+      <image class="index-logo" src="/images/logo.png"></image>
+      <view class="index-desc">以下将展示小程序网络请求的封装方法，仅供参考，开发者可根据自身需求自定义使用，具体属性参数详见 <navigator url="pages/doc-web-view/doc-web-view" class="weui-agree__link">weReq开发文档</navigator>。</view>
+    </view>
+    <view class="index-bd">
+      <view class="kind-list">
+        <view class="kind-list-item">
+          <view class="kind-list-item-hd kind-list-item-hd-show">
+            <view class="kind-list-text">网络</view>
+            <image class="kind-list-img" src="/images/network.png"></image>
+          </view>
+          <view class="kind-list-item-bd kind-list-item-bd-show">
+            <view class="navigator-box navigator-box-show">
+              <view class="page-body">
+                <view class="btn-area">
+                  <button bindtap="makeRequest1" type="primary">async/await方法请求</button>
+                  <button bindtap="makeRequest2" type="primary">then方法请求</button>
+                  <button bindtap="makeRequest3" type="primary">无痕刷新token</button>
+                  <view style="color: grey;font-size: 25rpx;"> <text>当点击按钮的时候，会请求网络请求，服务端发现该网络请求没携带token或token过期，则会去调用刷新token接口该接口是你定义的，当向服务器获取到token后，系统会自动重新再调用一开始的网络请求重新获取数据，此过程用户无感知，体验非常好。</text></view>
+                  <button bindtap="makeRequest4" type="primary">自定义加载框文字</button>
+                  <button bindtap="makeRequest5" type="primary">取消默认加载框</button>
+                  <button bindtap="makeRequest6" type="primary">同时多个请求仅显示一个加载框</button>
+                  <view style="color: grey;font-size: 25rpx;"> <text>同时多个请求仅显示一个加载框，直到当前所有的网络请求完成，加载框才会结束，避免多个请求加载框闪烁</text></view>
+                  <button bindtap="makeRequest7" type="primary">单个请求自定义加载框</button>
+                  <button bindtap="makeRequest8" type="primary">全局请求自定义加载框</button>
+                  <view style="color: grey;font-size: 25rpx;"> <text>实例自定义加载框指的是创建出来的一个实例下所有调用的网络请求，都用自定义加载框</text></view>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

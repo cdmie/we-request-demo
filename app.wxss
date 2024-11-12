@@ -1,0 +1,46 @@
+/**app.wxss**/
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  justify-content: space-between;
+  font-size: 16px;
+  font-family: -apple-system-font, Helvetica Neue, Helvetica, sans-serif;
+}
+
+.page-body {
+  width: 100%;
+  flex-grow: 1;
+  /* overflow-x: hidden; */
+}
+
+.page-body-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.page-body-text {
+  font-size: 15px;
+  line-height: 26px;
+  color: rgba(0, 0, 0, .3);
+}
+
+.page-body-wording {
+  text-align: center;
+  padding: 100px 50px;
+}
+
+/* widget */
+.btn-area {
+  margin-top: 30px;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0 15px;
+}
+
+button {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
